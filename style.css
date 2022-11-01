@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: auto;
+}
+
+html, body{
+    background-color: #ecf2f8;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 16px;
+}
+
+#main-container {
+    padding: 15% 7.5%;
+    top: 0px;
+}
+
+#left-section .testimonial {
+    margin-bottom: 20px;
+}
+
+.header img{
+    width:35px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 1.5px solid #8e68cc;
+}
+
+.header-txt > p {
+    font-size: 13px;
+}
+
+.header .names {
+    font-size: 1rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial > p {
+    font-size: 12px;
+}
+
+.testimonial h4 {
+    margin-bottom: 15px;
+    font-size: 1.095rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial{
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.review-txt {
+    opacity: 0.7;
+}
+
+.ver-grad {
+    opacity: 0.5;
+}
+
+#item-1 {
+    background-color: #7541c8;
+    color: white;
+    position: relative;
+}
+
+#quote-svg{
+    position: absolute;
+    right: 10%;
+    top: 2%;
+    width: auto;
+    height: 120px;
+    z-index: 1;
+}
+
+#item-2 {
+    background-color: #48556a;
+    color: white;
+}
+
+#item-3, #item-5 {
+    background-color: #ffffff;
+    color: #48556a
+}
+
+#item-4 {
+    background-color: #19212e;
+    color: white;
+}
+
+@media (min-width: 576px){
+
+    #main-container,
+    #left-section,
+    .left-boxes {
+        display: flex;
+    }
+
+    #main-container{
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    #left-section{
+        flex-direction: column;
+        flex-basis: 75%;
+    }
+
+    #item-5 {
+        flex-basis: 25%;
+    }
+
+    .left-boxes{
+        flex-basis: 50%;
+    }
+
+    #item-1, #item-4 {
+        flex-basis: 65%;
+    }
+
+    #item-2, #item-3 {
+        flex-basis: 35%;
+    }
+
+    #left-section .testimonial {
+        margin: 0;
+        margin-right: 20px;
+    }   
+
+    #topl-section {
+        margin-bottom: 20px;
+    }
+
+    .testimonial > p {
+        font-size: 1rem;
+    }
+    
+    .testimonial h4 {
+        font-size: 1.35rem;
+    }
+
+    .testimonial:hover {
+        transform: scale(1.015);
+    }
+}
